@@ -1,0 +1,9 @@
+#!/Bin/Bash
+ 
+#A PowerShell script that will enumerate the Access Control List of each file or subdirectory within the current working directory.
+ 
+$directory = Get-Location
+foreach ($item in $directory) 
+{
+    Get-ChildItem $directory | Get-Acl
+}

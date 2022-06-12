@@ -1,0 +1,11 @@
+#!/bin/bash
+
+date1=$(date '+%Y-%m-%d')
+uname1=$(uname)
+ips=(hostname -I | awk '{print $2}')
+hosts=$(hostname)
+
+echo "Today's date is" $date1
+echo "Machine name is" $MACHTYPE
+echo "Ip Address of the Machine is" $ips
+echo "the host name is" $hosts
